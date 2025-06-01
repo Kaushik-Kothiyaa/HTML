@@ -1,0 +1,74 @@
+<!-- Task: Create a contact form with the following fields: 
+ o Full name (text input) 
+ o Email (email input) 
+ o Phone number (tel input) 
+ o Subject (dropdown menu) 
+ o Message (textarea) 
+ o Submit button -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+
+<body>
+    <h2>Application form</h2>
+    <form action="" method="post">
+        <div>
+            <label for="fullname">Enter Full Name : </label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email id : </label><br>
+            <input type="email" name="email" id="email" placeholder="type your email id">
+
+        </div>
+        <br>
+        <div>
+            <label for="password">Password : </label><br>
+            <input type="password" name="password" id="password" required>
+
+        </div>
+
+        <br>
+        <div>
+            <label for="phonenumber">Phone Number : </label><br>
+            <input type="tel" name="phonenumber" id="phonenumber">
+
+        </div>
+        <br>
+        <div>
+            <label for="course">Select your course : </label><br>
+            <select name="course" id="course">
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Programming & Software Development">Programming & Software Development</option>
+                <option value="Artificial Intelligence & Machine Learning">Artificial Intelligence & Machine Learning
+                </option>
+                <option value="Data & Databases">Data & Databases</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="Cybersecurity & Networking">Cybersecurity & Networking</option>
+            </select>
+
+        </div>
+        <br>
+
+        <label for="message">Type your Massage</label>
+        <br>
+        <textarea name="message" id="message" placeholder="Enter your Message here" rows="4" cols="60"></textarea>
+
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="send">
+
+        </div>
+
+    </form>
+</body>
+
+</html>
